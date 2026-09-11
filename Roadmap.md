@@ -1,6 +1,6 @@
 # Git & Github
 
-## O QUE VAMOS VER:
+## AULA 1 O QUE VAMOS VER:
 > Mudar de pastas
 > Listar as pastas
 > Criar pastas/ arquivos
