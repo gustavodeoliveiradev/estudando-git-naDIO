@@ -50,6 +50,9 @@ _Untracked_
 **preparando os arquivos pra enviar para o repositório**
 _Quando um arquivo untracked, recém criado entra direto no staged_
 _Quando já temos um arquivo e modificamos esse arquivo, o git percebe pelo SHA1 do arquivo e assim ele muda de **unmodified** para **modified** e se sequencialmente rodamos o **git add** para esse arquivo agora **modified** ele entra em **staged** que é quando ele está preparado para ser **commitado** e subir para o repositório._
+ - **git add <arquivo>** _quando queremos adicionar as modificações de um arquivo específico_
+ - **git add .** _quando queremos adicionar todas as mudanças feitas no repositório local para o repositório remoto (github)_
+ - **git add *** _apenas se quiser adicionar explicitamente os arquivos do nível atual, sendo geralmente menos seguro e prático para controle de versão._
 
 
 ### GIT COMMIT
@@ -60,5 +63,5 @@ _Assim que ele é **"commitado"** com uma mensagem e enviado para o repositório
  - **REMOTE REPOSITORY** > seu github, onde você guarda o código e é pra ele que você manda os arquivos quando você faz o passo a passo do **git add** e **git commit**.
  - **AMBIENTE DE DESENVOLVIMENTO** > é a sua máquina, onde você escreve o seu código. Aqui, mesmo que você modifique o código, se você não fizer os comandos git acima, o seu repositório remoto não vai ser modificado.
 
- ### GIT STATUS
+### GIT STATUS
   - _com o **git status** somos capazes de observar os estágios dos arquivos. Como vimos antes, os arquivos passam por estágios antes de serem **'comitados'** e é através do **git status** que podemos saber em que estágio estão os arquivos do nosso repositório_
