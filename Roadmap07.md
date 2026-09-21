@@ -51,3 +51,45 @@ git stash clear
 **IMPORTANTE:** _git stash save ""_ esse comando salva o que estamos fazendo em uma branch para que possamos sair de uma branch para outra sem carregar o que estamos fazendo de uma branch para outra.
 Ademais, também vimos que o git _git stash list_ lista o que está no **stash**. O **stash** funciona como um array e lista as **stashs** que temos salvas. Podemos usar o comando _git stash save_ sem mensagem, porém é recomendado que seja escrita uma mensagem para saber o que esta salvo.
 O comando _git stash pop_ abre os **stashs** à nossa escolha. Caso tenhamos mais de um, podemos especificar o **stash** desejado para abrir e continuar trabalhando ou também podemos usar o comando _git stash clear_ que abre todos os **stashs**.
+
+
+---
+
+## Comando git log
+
+_Visualização de histórico:_
+De acordo com a atualização do projeto e contando que trabalhamos com diversas outras pessoas, faz-se necessário ter uma visualização do histórico de commits e isso a gente conseguir fazer através do comando **git log**.
+```
+git log
+: q
+```
+Com esse comando, podemos visualizar os commits feitos no repositório, a hora, a data, quem fez o commit e o sha1 desses commits. E pelo terminal, conseguimos navegar por essas informações usando o mouse ou as setas pra cima e pra baixo ou _PgUp_ ou _PgDn_ no teclado. Se usarmmos _:_ + _q_, saímos da visualização do **git log**. Lembrando que esse é o comando puro do **git log**.
+
+ - Podemos usar o **git log** para visualizar pastas especificas e assim observar os commits só naquela pasta ou diretório específico ou arquivos.
+ ```
+ git log (nome-da-pasta ou nome-do-arquivo)
+ ```
+
+**LEMBRETE:** _ctrl + l_ limpa o terminal
+
+
+---
+
+## Subcomandos específicos do git log
+Podemos trazer a visualização dos logs usando um comando específico do **git log**.
+```
+git log --oneline
+: q
+```
+Traz o histórico de commits de uma forma resumida.
+
+Também podemos visualizar o histórico de uma outra maneira, com uma linha do tempo praticamente:
+```
+git log --graph
+:q
+```
+
+Bem como também podemos visualizar as mudanças de uma maneira gráfica usando **gitk**:
+```
+gitk
+```
