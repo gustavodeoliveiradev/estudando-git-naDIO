@@ -46,3 +46,19 @@ _EXEMPLO 4._
 git reset --mixed HEAD~1
 ```
 Nesse caso, ele devolve para o working directory. É como se AINDA SEQUER TIVESSEMOS DADO **git add .**.
+
+_EXEMPLO 5._
+```
+git reset --hard HEAD~1
+```
+Nessa situação, é recomendado usar o --hard com muito cuidado porque ele exclui o commit, ele não muda o estado do arquivo pra staged ou para o working directory, ele realmente apaga o commit e consequentemente o arquivo que por ventura estivesse sendo commitado antes de envia-lo para o **git push origin main** que é quando enviamos direto para o repositório do github.
+
+---
+
+**git revert**
+ - _HEAD~1_
+ - _8fs7lxc1_ (exemplo de hash de um commit).
+
+O **git revert** não tem flags, pois ele move o commit orientado pela HEAD ou pela hash do commit em questão. Diferente do **git reset** que tem suas flags.
+O **git revert** move a HEAD e reverte o commit em questão gerando um novo commit.
+Por exemplo geramos commits "C1", "C2", "C3", "C4" e "C5" e usamos **git revert HEAD~1**. Ele vai gerar um commit novo revertendo o que foi feito no "C4". Portanto, se no C4 foi gerado um novo arquivo, esse arquivo é deletado, contudo, se esse arquivo foi apenas modificado no C4, essa modificação é revertida.
