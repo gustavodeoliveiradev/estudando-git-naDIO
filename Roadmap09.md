@@ -83,6 +83,6 @@ _Rodapé_ Footer
  > https://semver.org/
 
 **CONVENTIONAL COMMITS**
-    _A especificação do Conventional Commits é uma convenção simples para utilizar nas mensagens de commit. Ela define um conjunto de regras para criar um nhistórico de commit explícito, o que facilita a criação de ferramentas automatizadas baseadas na especificação. Esta convenção se encaixa com o SemVer, descrevendo so recursos, correções e modificações que quebram a compatibilidade nas mensagens de commit.
+    A especificação do Conventional Commits é uma convenção simples para utilizar nas mensagens de commit. Ela define um conjunto de regras para criar um nhistórico de commit explícito, o que facilita a criação de ferramentas automatizadas baseadas na especificação. Esta convenção se encaixa com o SemVer, descrevendo so recursos, correções e modificações que quebram a compatibilidade nas mensagens de commit.
 > https://www.conventionalcommits.org/
 
