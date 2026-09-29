@@ -65,3 +65,24 @@ _Rodapé_ Footer
 
 **Rodapé**
  - Referencie assuntos relacionados
+
+ ----------
+
+ Nesse sentido, fizemos abrimos uma issue que são classificadas por # e no commit anterior solucionamos a issue que foi aberta no github.
+
+ ### Commits Semânticos
+ #### Conventional Commits
+
+ _Semantic Versioning_
+ 3 . 2 . 7
+ **3** - MAJOR - Toda vez que adicionarmos o que quebra compatibilidade, é uma atualização MAJOR.
+ **EXEMPLO** Caso existam outros desenvolvedores trabalhando no mesmo projeto e a sua atualização é tão grande que acaba quebrando a compatibilidade com o projeto dos outros desenvolvedores, ela é chamada de MAJOR
+ **2** - MINOR - Nesse caso ela representa uma atualização que não quebra compatibilidade.
+ **EXEMPLO** Você sobe uma atualização seja menor ou maior e essa atualização não inviabiliza que os outros desenvolvedores continuem trabalhando em outras versões do mesmo projeto, ou seja, ela não quebra a compatibilidade e por isso é chamada MINOR
+ **7** - PATCH - Resoluções de bugs, pequenas alterações do dia a dia que incrementam PATCH. 
+ > https://semver.org/
+
+**CONVENTIONAL COMMITS**
+    _A especificação do Conventional Commits é uma convenção simples para utilizar nas mensagens de commit. Ela define um conjunto de regras para criar um nhistórico de commit explícito, o que facilita a criação de ferramentas automatizadas baseadas na especificação. Esta convenção se encaixa com o SemVer, descrevendo so recursos, correções e modificações que quebram a compatibilidade nas mensagens de commit.
+> https://www.conventionalcommits.org/
+
